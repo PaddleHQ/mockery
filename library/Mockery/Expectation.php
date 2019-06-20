@@ -299,8 +299,8 @@ class Expectation implements ExpectationInterface
         if ($this->isMultiArgumentClosureExpectation()) {
             return $this->_matchArg($this->_expectedArgs[0], $args);
         }
-        $argCount = count($args);
-        if ($argCount !== count($this->_expectedArgs)) {
+        $argCount = count((array) $args);
+        if ($argCount !== count((array) $this->_expectedArgs)) {
             return false;
         }
         for ($i=0; $i<$argCount; $i++) {

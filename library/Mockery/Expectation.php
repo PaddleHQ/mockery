@@ -282,7 +282,7 @@ class Expectation implements ExpectationInterface
      */
     private function isMultiArgumentClosureExpectation()
     {
-        return (count($this->_expectedArgs) === 1 && ($this->_expectedArgs[0] instanceof \Mockery\Matcher\MultiArgumentClosure));
+        return (count((array) $this->_expectedArgs) === 1 && ($this->_expectedArgs[0] instanceof \Mockery\Matcher\MultiArgumentClosure));
     }
 
     /**

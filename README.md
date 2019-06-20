@@ -1,4 +1,4 @@
-#!!This is a fork of Mockery with an old branch and php 7.2 fixes, it's not a long term solution and only to unblock upgrading to php 7.2!!
+# !!This is a fork of Mockery with an old branch and php 7.2 fixes, it's not a long term solution and only to unblock upgrading to php 7.2!!
 
 Mockery
 =======
